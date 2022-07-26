@@ -3,7 +3,7 @@ export const products = [
     id: 1,
     name: "Swag Point Camiseta con capucha",
     price: 20.89,
-    image: "src/assets/img/1.jpg",
+    image: "assets/img/1.jpg",
   },
   {
     id: 2,
