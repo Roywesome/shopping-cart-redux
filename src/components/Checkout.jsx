@@ -1,16 +1,23 @@
 import React from "react";
 import styled from 'styled-components'
-import {useDispatch} from 'react-redux';
+import {useSelector, useDispatch} from 'react-redux';
 import {checkout, clear} from '../features/shopping/ShoppingSlice';
 
+
 const Checkout = () => {
+  const {cartItems} = useSelector(state => state.shopping);
   const dispatch = useDispatch();
+
+  const sumTotal =() => {
+    const newArray = cartItems.map((cartItem) => cartItem.quantity * cartItem.price);
+    return newArray.reduce((acc, curr) => acc + curr)
+  }
   return (
     <Wrapper>
     <p>Total Items:</p>
-    {/*<h4>{itemCount}</h4>*/}
+    <h4>{cartItems.length}</h4>
     <p>Total Payment:</p>
-    {/*<h4>{formatCurrency(total)}</h4>*/}
+    <h4> $ {sumTotal()}</h4>
     <div>
       <CheckBtn onClick={() => dispatch(checkout())}>CHECKOUT</CheckBtn>
       <ClearBtn onClick={() => dispatch(clear())}>CLEAR</ClearBtn>
