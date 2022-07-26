@@ -45,13 +45,13 @@ export const products = [
     id: 8,
     name: "Fox Racing Camiseta Honda ",
     price: 19.99,
-    image: "src/assets/img/8.jpg",
+    image: "https://m.media-amazon.com/images/I/61dYI-qaSsL._AC_UL320_.jpg",
   },
   {
     id: 9,
-    name: "https://m.media-amazon.com/images/I/71TuYj6GkNL._AC_UL320_.jpg",
+    name: "Shirt Cool Summer",
     price: 25.16,
-    image: "src/assets/img/9.jpg",
+    image: "https://m.media-amazon.com/images/I/71TuYj6GkNL._AC_UL320_.jpg",
   },
   {
     id: 10,
