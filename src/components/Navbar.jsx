@@ -138,13 +138,17 @@ const Right = styled.div`
 `;
 
 const NavList = styled.ul`
-  width: 100%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   @media (max-width: 500px) {
     flex-direction: column;
     flex-wrap: nowrap;
+  }
+
+  @media (max-width: 1150px){
+    justify-content: space-around;
   }
 `;
 
@@ -222,7 +226,7 @@ const MenuBtn = styled.div`
 
   @media (max-width: 500px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-flow: column nowrap;
     width: 18px;
