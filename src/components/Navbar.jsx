@@ -44,7 +44,7 @@ const Navbar = () => {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <a href="https://github.com/roywesome" target="_blank">
+                <a href="https://github.com/imtuesday" target="_blank">
                   Contact
                 </a>
               </NavItem>
